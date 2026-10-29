@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operations Command — Grill Thrill Kitchen</title>
+  <meta name="description" content="Grill Thrill Operations Command Portal: Live kitchen queue, real-time KPI metrics in ₹ INR, inventory toggles, and menu catalog management." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="admin-page">
+  <!-- Global Navigation Header -->
+  <div id="globalHeader"></div>
+
+  <!-- Page Banner -->
+  <section class="page-hero-banner">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.25rem;">
+      <div>
+        <span class="section-label" style="color:var(--bunora-coral-400);">⚡ KITCHEN COMMAND CENTER</span>
+        <h1>Grill Thrill Operations Center</h1>
+        <p>Live order dispatch queue, inventory stock availability toggles, and catalog item management in ₹ INR.</p>
+      </div>
+      <a href="menu.html" class="btn btn-secondary btn-sm">
+        View Customer Storefront →
+      </a>
+    </div>
+  </section>
+
+  <!-- Admin Main Mount -->
+  <main class="container" id="adminDashboardMount" style="padding-top:2.5rem;padding-bottom:5.5rem;">
+    <!-- Populated dynamically by js/admin.js -->
+  </main>
+
+  <!-- Admin Add / Edit Item Modal -->
+  <div class="modal-backdrop" id="adminModalBackdrop"></div>
+  <div class="modal-dialog" id="adminItemModal" role="dialog" aria-modal="true" aria-label="Grill Thrill Item Editor"></div>
+
+  <!-- Global Footer -->
+  <div id="globalFooter"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

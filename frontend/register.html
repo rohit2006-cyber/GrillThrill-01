@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account — Grill Thrill Artisanal Kitchen</title>
+  <meta name="description" content="Register your Grill Thrill customer account to unlock daily perks, faster dispatch, and 20% off with GRILL20." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Global Navigation Header -->
+  <div id="globalHeader"></div>
+
+  <main class="auth-page-wrap">
+    <div class="auth-card">
+      <!-- Left Brand Column -->
+      <div class="auth-brand-side">
+        <div>
+          <span class="section-label" style="color:var(--bunora-coral-400);">JOIN GRILL THRILL CLUB</span>
+          <h2 style="font-size:2.2rem;color:#FFFFFF;margin-bottom:0.75rem;line-height:1.15;">
+            Big Cravings. Fresh Bites.
+          </h2>
+          <p style="opacity:0.88;font-size:0.95rem;margin-bottom:2rem;line-height:1.65;">
+            Create your customer account in seconds to save your favorite meal presets, unlock 20% off with <strong>GRILL20</strong>, and track orders in real-time.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);border-radius:18px;padding:1.35rem;font-size:0.86rem;">
+          <strong style="color:var(--bunora-coral-400);display:block;margin-bottom:0.45rem;font-size:0.9rem;">🎁 New Member Benefit</strong>
+          <p style="opacity:0.9;line-height:1.5;">
+            Use code <strong>GRILL20</strong> on your first order for an instant 20% savings + Free Delivery on orders over ₹399!
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Form Column -->
+      <div class="auth-form-side">
+        <h1 style="font-size:2rem;margin-bottom:0.35rem;color:var(--bunora-forest-900);">Create Your Account</h1>
+        <p style="color:var(--bunora-charcoal-muted);font-size:0.92rem;margin-bottom:1.5rem;">
+          Already have an account? <a href="login.html" style="color:var(--bunora-coral-500);font-weight:800;text-decoration:underline;">Sign In Here</a>
+        </p>
+
+        <div
+          id="authErrorAlert"
+          style="display:none;background:#FEE2E2;color:#991B1B;padding:0.85rem 1.15rem;border-radius:12px;border:1px solid #FCA5A5;font-weight:700;font-size:0.88rem;margin-bottom:1.25rem;"
+        ></div>
+
+        <form id="registerForm">
+          <div class="form-group">
+            <label class="form-label" for="regName">Full Name *</label>
+            <input
+              type="text"
+              id="regName"
+              class="form-control"
+              required
+              minlength="2"
+              placeholder="e.g., Ishaan Verma"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regEmail">Email Address *</label>
+            <input
+              type="email"
+              id="regEmail"
+              class="form-control"
+              required
+              placeholder="e.g., ishaan@example.com"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regPassword">Password *</label>
+            <input
+              type="password"
+              id="regPassword"
+              class="form-control"
+              required
+              minlength="6"
+              placeholder="Minimum 6 characters"
+              autocomplete="new-password"
+            />
+            <div id="passwordStrengthText" style="font-size:0.78rem;font-weight:700;margin-top:0.35rem;"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="regConfirmPassword">Confirm Password *</label>
+            <input
+              type="password"
+              id="regConfirmPassword"
+              class="form-control"
+              required
+              placeholder="Re-enter your password"
+              autocomplete="new-password"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top:1.25rem;">
+            Create Free Grill Thrill Account →
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <div id="globalFooter"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

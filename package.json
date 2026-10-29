@@ -1,0 +1,9 @@
+{
+  "name": "grillthrill",
+  "version": "1.0.0",
+  "description": "Grill Thrill Flame-Grilled Brioche Food Ordering Platform",
+  "scripts": {
+    "start": "node backend/server.js",
+    "db:setup": "node database/setup.js"
+  }
+}

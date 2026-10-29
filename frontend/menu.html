@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore the Menu — Grill Thrill Kitchen</title>
+  <meta name="description" content="Explore Grill Thrill's handcrafted brioche burgers, crispy crinkle fries, cool hand-spun drinks, and power combos in Indian Rupees (₹)." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Global Navigation Header -->
+  <div id="globalHeader"></div>
+
+  <!-- Page Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <span class="section-label" style="color:var(--bunora-coral-400);">CHEF-CRAFTED FRESH</span>
+      <h1>The Grill Thrill Menu</h1>
+      <p>Discover 18 handcrafted recipes made with fresh local ingredients, artisanal brioche, and unhurried kitchen craft.</p>
+    </div>
+  </section>
+
+  <main class="container" style="padding-top:2.5rem;padding-bottom:5.5rem;">
+    <!-- Modern Menu Filter & Search Toolbar -->
+    <div class="menu-toolbar">
+      <!-- Category Pills -->
+      <div class="category-pills-row" id="categoryPillsContainer" role="tablist" aria-label="Menu Categories">
+        <!-- Populated dynamically by js/menu.js -->
+      </div>
+
+      <!-- Search, Dietary Filters, and Sorting Controls -->
+      <div class="filter-search-row">
+        <div class="search-input-wrap">
+          <span class="search-icon-inside">🔍</span>
+          <input
+            type="search"
+            id="menuSearchInput"
+            placeholder="Search flame burgers, crinkle fries, coolers, combos..."
+            aria-label="Search Grill Thrill menu items"
+          />
+        </div>
+
+        <div class="toolbar-controls-right">
+          <!-- Dietary Filter (All / Veg / Non-Veg) -->
+          <div style="display:inline-flex;align-items:center;background:var(--bunora-cream-surface);border:1px solid var(--bunora-cream-border);border-radius:var(--radius-pill);padding:2px;">
+            <button type="button" class="preset-chip active" id="dietAllBtn" style="padding:0.35rem 0.75rem;margin:0;">All</button>
+            <button type="button" class="preset-chip" id="dietVegBtn" style="padding:0.35rem 0.75rem;margin:0;">🌱 Veg</button>
+            <button type="button" class="preset-chip" id="dietNonVegBtn" style="padding:0.35rem 0.75rem;margin:0;">🍗 Non-Veg</button>
+          </div>
+
+          <!-- In-Stock Filter -->
+          <label style="display:inline-flex;align-items:center;gap:0.45rem;font-weight:700;font-size:0.86rem;color:var(--bunora-charcoal);cursor:pointer;">
+            <input type="checkbox" id="hideUnavailableCheck" style="width:16px;height:16px;accent-color:var(--bunora-forest-800);" />
+            <span>In Stock Only</span>
+          </label>
+
+          <!-- Sorting Dropdown -->
+          <select id="menuSortSelect" class="select-control" aria-label="Sort menu items">
+            <option value="featured">Sort: Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A – Z</option>
+            <option value="calories-asc">Calories: Low to High</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results Count Bar -->
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.75rem;">
+      <span id="menuResultsCount" style="font-weight:700;font-size:0.92rem;color:var(--bunora-charcoal-muted);">
+        Loading Grill Thrill menu items...
+      </span>
+      <span style="font-size:0.82rem;font-weight:700;color:var(--bunora-forest-600);">
+        ⚡ Free Express Delivery on orders above ₹399
+      </span>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="menuGrid">
+      <!-- Populated dynamically by js/menu.js -->
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <div id="globalFooter"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

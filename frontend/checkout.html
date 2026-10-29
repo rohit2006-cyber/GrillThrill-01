@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Express Checkout — Grill Thrill Kitchen</title>
+  <meta name="description" content="Complete your Grill Thrill artisanal food order with instant simulated checkout, address presets, and live order tracking in Indian Rupees (₹)." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Global Navigation Header -->
+  <div id="globalHeader"></div>
+
+  <!-- Page Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <span class="section-label" style="color:var(--bunora-coral-400);">EXPRESS KITCHEN DISPATCH</span>
+      <h1>Express Checkout</h1>
+      <p>Confirm your delivery address, enter your phone number, select a simulated payment option, and dispatch your order.</p>
+    </div>
+  </section>
+
+  <!-- Checkout Main Mount -->
+  <main class="container" id="checkoutPageMount">
+    <!-- Populated dynamically by js/checkout.js -->
+  </main>
+
+  <!-- Order Confirmation Modal -->
+  <div class="modal-backdrop" id="orderConfirmBackdrop"></div>
+  <div class="modal-dialog" id="orderConfirmModal" role="dialog" aria-modal="true" aria-label="Grill Thrill Order Confirmation"></div>
+
+  <!-- Global Footer -->
+  <div id="globalFooter"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

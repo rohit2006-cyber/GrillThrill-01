@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order History — Grill Thrill</title>
+  <meta name="description" content="Review your past Grill Thrill orders, view full item receipts and payment statuses, or reorder your favourite flame-grilled meals." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Global Navigation Header -->
+  <div id="globalHeader"></div>
+
+  <!-- Page Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <span class="section-label" style="color:var(--bunora-coral-400);">CUSTOMER ACCOUNT</span>
+      <h1>Order History</h1>
+      <p>Review your previous orders, inspect itemized receipts, check live dispatch statuses, and reorder favourite combos in 1 click.</p>
+    </div>
+  </section>
+
+  <!-- Order History Main Mount -->
+  <main class="container" id="orderHistoryMount" style="padding-top:2.5rem;padding-bottom:5rem;">
+    <!-- Populated dynamically by js/order-history.js -->
+  </main>
+
+  <!-- Order Details Receipt Modal -->
+  <div class="modal-backdrop" id="historyModalBackdrop"></div>
+  <div class="modal-dialog" id="historyOrderModal" role="dialog" aria-modal="true" aria-label="Grill Thrill Order Details"></div>
+
+  <!-- Global Footer -->
+  <div id="globalFooter"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/order-history.js"></script>
+</body>
+</html>

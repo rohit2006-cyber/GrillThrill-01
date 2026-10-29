@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In — Grill Thrill Artisanal Kitchen</title>
+  <meta name="description" content="Sign in to your Grill Thrill account to manage orders, track delivery, and explore chef-crafted specials." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Global Navigation Header -->
+  <div id="globalHeader"></div>
+
+  <main class="auth-page-wrap">
+    <div class="auth-card">
+      <!-- Left Brand Column -->
+      <div class="auth-brand-side">
+        <div>
+          <span class="section-label" style="color:var(--bunora-coral-400);">WELCOME BACK</span>
+          <h2 style="font-size:2.2rem;color:#FFFFFF;margin-bottom:0.75rem;line-height:1.15;">
+            Big Cravings. Fresh Bites.
+          </h2>
+          <p style="opacity:0.88;font-size:0.95rem;margin-bottom:2rem;line-height:1.65;">
+            Sign in to access your saved delivery addresses, review recent orders, or access the restaurant operations dispatch portal.
+          </p>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);border-radius:18px;padding:1.35rem;font-size:0.86rem;">
+          <strong style="color:var(--bunora-coral-400);display:block;margin-bottom:0.45rem;font-size:0.9rem;">🔒 Full-Stack Security Architecture</strong>
+          <ul style="padding-left:1.15rem;opacity:0.88;display:grid;gap:0.35rem;">
+            <li>Cryptographic password hashing via <code>bcrypt</code></li>
+            <li>HTTP-only authenticated server sessions</li>
+            <li>Role-enforced API routes (Customer &amp; Admin)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Form Column -->
+      <div class="auth-form-side">
+        <h1 style="font-size:2rem;margin-bottom:0.35rem;color:var(--bunora-forest-900);">Sign In to Grill Thrill</h1>
+        <p style="color:var(--bunora-charcoal-muted);font-size:0.92rem;margin-bottom:1.5rem;">
+          New to Grill Thrill? <a href="register.html" style="color:var(--bunora-coral-500);font-weight:800;text-decoration:underline;">Create an Account</a>
+        </p>
+
+        <!-- 1-Click Instant Demo Login Box -->
+        <div class="demo-login-box">
+          <p>⚡ Instant 1-Click Demo Access (Evaluation &amp; Testing)</p>
+          <div class="demo-btn-row">
+            <button type="button" class="btn btn-secondary btn-sm" id="demoCustomerBtn">
+              👤 Customer Demo
+            </button>
+            <button type="button" class="btn btn-forest btn-sm" id="demoAdminBtn">
+              ⚡ Admin Demo
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="authErrorAlert"
+          style="display:none;background:#FEE2E2;color:#991B1B;padding:0.85rem 1.15rem;border-radius:12px;border:1px solid #FCA5A5;font-weight:700;font-size:0.88rem;margin-bottom:1.25rem;"
+        ></div>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label class="form-label" for="loginEmail">Email Address</label>
+            <input
+              type="email"
+              id="loginEmail"
+              class="form-control"
+              required
+              placeholder="e.g., customer@burgerking.edu"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.35rem;">
+              <label class="form-label" for="loginPassword" style="margin-bottom:0;">Password</label>
+            </div>
+            <input
+              type="password"
+              id="loginPassword"
+              class="form-control"
+              required
+              placeholder="Enter your password"
+              autocomplete="current-password"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top:1.25rem;">
+            Sign In to Grill Thrill →
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <div id="globalFooter"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
